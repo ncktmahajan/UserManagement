@@ -19,7 +19,7 @@ Ensure the following are installed on your system:
 ### Steps to Install and Run Locally
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/employwise-assignment.git
+    git clone https://github.com/ncktmahajan/UserManagement.git
     cd employwise-assignment
     ```
 
