@@ -1,0 +1,223 @@
+.user-list-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #e3f2fd, #ffffff); 
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    background: linear-gradient(145deg, #007bff, #0056b3); 
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.profile-card {
+    width: 320px;
+    background: linear-gradient(145deg, #ffffff, #f9f9f9);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.profile-card h3 {
+    margin: 0.5rem 0;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.profile-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.edit-button,
+.delete-button {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid transparent; 
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent; 
+}
+
+.edit-button {
+    border-color: #4caf50; 
+    color: #4caf50; 
+}
+
+.edit-button:hover {
+    background-color: #4caf50; 
+    color: #fff; 
+    border-color: #388e3c; 
+}
+
+.delete-button {
+    border-color: #f44336;
+    color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #f44336; 
+    color: #fff; 
+    border-color: #d32f2f; 
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 30%;
+}
+
+.pagination-buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #f44336;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f5f5f5;
+    font-size: 1rem;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+    .profile-card {
+        width: 90%; 
+    }
+
+    .card-container {
+        gap: 1.5rem;
+    }
+}
