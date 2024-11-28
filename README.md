@@ -60,6 +60,15 @@ This application can be deployed on [UserManagement](https://usermanagement-umbe
 ### Live Demo
 The live demo of the deployed application can be found [here](https://vercel.com/).
 
+### Login 
+![image](https://github.com/user-attachments/assets/33cd526a-b83e-4d99-b0af-6ffa19753250)
+### User Details 
+![image](https://github.com/user-attachments/assets/05dc3c13-9936-4aae-be58-fa90a3fa4ae5)
+### Edit User
+![image](https://github.com/user-attachments/assets/98733367-eff0-48fc-a7c5-8489d5451d67)
+### Delete User
+![image](https://github.com/user-attachments/assets/6ce2fd80-fd8b-4709-945f-db01f98b55e8)
+
 ---
 
 ## API Endpoints Used
